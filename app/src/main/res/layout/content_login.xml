@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_login"
+    tools:context=".login.LoginActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/layoutMainContainer"
+        tools:context="com.falkenapps.macgyver.login.LoginActivity">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:errorEnabled="true"
+            android:id="@+id/wrapperEmail"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:text=""
+                android:hint="@string/login.message.email"
+                android:ems="10"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/editTxtEmail" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/wrapperPassword"
+            app:passwordToggleEnabled="true"
+            app:errorEnabled="true"
+            android:layout_below="@+id/wrapperEmail">
+
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:hint="@string/login.message.password"
+                android:layout_marginTop="19dp"
+                android:id="@+id/editTxtPassword"
+                android:text="" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:layout_below = "@id/wrapperPassword"
+            android:id="@+id/layoutButtons">
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="@string/login.button.signIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textAlignment="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/general_button"
+                android:id="@+id/btnSignInWithEmail" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="@string/login.button.signUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textAlignment="center"
+                android:background="@drawable/general_button"
+                android:id="@+id/btnSignUpWithEmail" />
+        </LinearLayout>
+        <!--visibility = gone -> doesn't take any space for layout purposes-->
+
+
+
+
+
+
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btnSignInWithGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutButtons"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/login.button.signInGoogle" />
+
+
+        <com.facebook.login.widget.LoginButton
+            xmlns:facebook="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btnSignInWithFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/btnSignInWithGoogle"
+            facebook:com_facebook_login_text="@string/login.button.signInFacebook"
+
+            android:text="@string/login.button.signInFacebook" />
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_below="@id/btnSignInWithFacebook"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
+

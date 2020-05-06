@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">MacGyver</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="anonymous">Sin registrar</string>
+    <string name="End">Finalizar</string>
+    <string name="doYouWantFinishApp">¿Quiere salir de la aplicación?</string>
+    <string name="welcome.slogan">Encuentra el profesional que necesitas</string>
+    <string name="welcome.signIn">Iniciar sesión</string>
+    <string name="welcome.signInSkip">Echar un vistazo</string>
+    <string name="welcome.dialog.signInValidation">Iniciando sesión</string>
+    <string name="adviseSignIn.rememberMessage">Recuerde las ventajas de ser usuario registrado:</string>
+    <string name="adviseSignIn.advantage1">- Evaluar y hacer comentarios sobre los profesionales</string>
+    <string name="adviseSignIn.advantage2">- Lista de profesionales favoritos</string>
+    <string name="adviseSignIn.advantage3">- Histórico de búsquedas</string>
+    <string name="adviseSignIn.advantage4">- Chatear con los profesionales</string>
+    <string name="adviseSignIn.continue">Continuar</string>
+    <string name="adviseSignIn.register">Registrarse</string>
+
+    <string name="facebook_app_id">723750327793145</string>
+    <string name="login.title">Registro</string>
+    <string name="login.message.success">Registro correcto</string>
+    <string name="login.message.unSuccess">No se ha podido iniciar sesión</string>
+    <string name="login.message.wrongPassword">La contraseña no es correcta, intentelo de nuevo</string>
+    <string name="login.message.emailNotExist">La cuenta de email no existe en MacGyver</string>
+    <string name="login.message.advicePassword">Para ver la constraseña que esta escribiendo  pulse sobre el icono del ojo</string>
+    <string name="login.message.adviceEmail">Revise que la ha escrito bien o cree una nueva cuenta con ese email</string>
+    <string name="login.message.email">Email</string>
+    <string name="login.message.verifyEmail">Le hemos enviado un email para verificar su cuenta.</string>
+    <string name="login.message.rememberPasswordEmailSent">Le hemos enviado un email con las instrucciones para cambiar su contraseña.</string>
+    <string name="login.message.errorSendingRememberPasswordEmail">No se ha podido enviar el email de cambio de contraseña. Intentelo mas tarde.</string>
+    <string name="login.message.password">Contraseña</string>
+    <string name="login.message.mustVerifyEmail">Debe verificar su cuenta de email, revise su cuenta %s</string>
+    <string name="login.message.userName">Nombre de usuario</string>
+    <string name="login.button.signIn">Iniciar sesión</string>
+    <string name="login.button.signInFacebook">Iniciar sesión con Facebook</string>
+    <string name="login.button.signInGoogle">Iniciar sesión con Google</string>
+    <string name="login.button.signUp">Crear cuenta</string>
+    <string name="login.button.signUpError">No se ha podido crear la cuenta</string>
+    <string name="login.message.emptyPassword">Debe escribir una contraseña para continuar</string>
+    <string name="login.message.invalidEmail">Formato de email no válido</string>
+    <string name="login.message.emptyUserName">Debe escribir un nombre para continuar</string>
+    <string name="login.message.emptyEmail">Debe escribir un email para continuar</string>
+    <string name="login.message.minPasswordLength">La contraseña debe de tener como mínimo %d carácteres</string>
+    <string name="login.message.rememberPasswordQuestion">La cuenta de email %s ya existe en el sistema.¿Quiere que le enviemos un correo para cambiar la contraseña?</string>
+    <string name="login.message.tooManyAttempts">Lleva varios intentos fallidos al ingresar la contraseña.¿Quiere que le enviemos un correo a %s para cambiar la contraseña?</string>
+
+
+    <string name="signUpWithEmail.title">Crear cuenta</string>
+
+    <string name="main.message.welcome">Bienvenido %s</string>
+    <string name="main.message.welcome.anonymous">Usuario no registrado</string>
+    <string name="main.button.signOff">Cerrar sesión</string>
+    <string name="main.leftMenu.option1">Opción 1</string>
+    <string name="main.leftMenu.option2">Opción 2</string>
+    <string name="main.pricePerHour">por hora</string>
+    <string name="main.drawer.open">abierto</string>
+    <string name="main.drawer.close">cerrado</string>
+    <string name="main.tab0.name">MÁS CERCANOS</string>
+    <string name="main.tab1.name">MEJOR VALORADOS</string>
+    <string name="main.tab2.name">MÁS ECONÓMICOS</string>
+    <string name="main.noJobFilter">No se ha filtrado por profesional</string>
+    <string name="main.noGeoFilter">No se ha definido geolocalización</string>
+    <string name="main.searchingJob">Buscando %s</string>
+    <string name="main.postalCodeNotExists">No existe el código postal</string>
+    <string name="main.nextToLocation">Próximo a %s</string>
+    <string name="main.nextToPostalCode">Próximo al código postal %s</string>
+
+    <string name="main.menu.section1.favorites">Mis favoritos</string>
+    <string name="main.menu.section2.mySearch">Mi última búsqueda</string>
+
+    <string name="main.menu.option1.appInfo">App info</string>
+    <string name="main.menu.option2.signin">Iniciar sesión</string>
+    <string name="main.menu.option2b.signOut">Cerrar sesión</string>
+
+
+    <string name="professional.floatingButtonLabel.Menu"></string>
+    <string name="professional.floatingButton.Menu.Chat">Chatear</string>
+    <string name="professional.floatingButton.Menu.Call">Llamar</string>
+    <string name="professional.floatingButton.Menu.FavoritesAdd">Añadir a favoritos</string>
+    <string name="professional.floatingButton.Menu.FavoritesDel">Quitar de favoritos</string>
+    <string name="professional.commentsTitle">Valoraciones</string>
+    <string name="professional.searching.comments">Buscando valoraciones</string>
+    <string name="professional.addToFavorites.mustBeSigned">Para añadir a favoritos debe de estar registrado</string>
+    <string name="professional.addToFavorites.whereToSign">Puede registrarse desde el Menu</string>
+    <string name="professional.addToFavorites.OK">Profesional añadido a su lista de favoritos</string>
+    <string name="professional.addToFavorites.ERROR">No se ha podido añadir el profesional a su lista de favoritos</string>
+    <string name="professional.chat.introduction">Hola mi nombre es %s</string>
+
+    <string name="favorites.title">Mis Favoritos</string>
+    <string name="favorites.searching">Buscando favoritos</string>
+
+    <string name="info.version">Version 1.0 BETA</string>
+    <string name="info.title">MacGyver Info</string>
+
+
+
+    <string name="search.fragment.job">Profesional</string>
+    <string name="search.fragment.job.head">Selecciona la categoría del profesional que necesitas:</string>
+    <string name="search.fragment.job.cat1">Fontanero</string>
+    <string name="search.fragment.job.cat2">Electricista</string>
+    <string name="search.fragment.job.cat3">Cerrajero</string>
+    <string name="search.fragment.job.cat4">Pintor</string>
+    <string name="search.fragment.job.cat5">Jardinero</string>
+    <string name="search.fragment.job.cat6">Albañil</string>
+    <string name="search.fragment.job.cat7">Persianista</string>
+    <string name="search.fragment.job.cat8">Cristalero</string>
+    <string name="search.fragment.job.cat9">Carpintero</string>
+    <string name="search.fragment.job.cat10">Desatascador</string>
+    <string name="search.fragment.job.cat11">Antenista</string>
+    <string name="search.fragment.job.cat12">Manitas</string>
+    <string name="search.fragment.job.cat13">Electrodomesticos</string>
+    <string name="search.fragment.job.cat14">Climatización</string>
+    <string name="search.fragment.job.cat15">Calefacción</string>
+    <string name="search.fragment.job.cat16">Informático</string>
+    <string name="search.fragment.location">Localización</string>
+    <string name="search.fragment.location.head">¿Donde se encuentra el domicilio que requiere la reparación?</string>
+    <string name="search.fragment.location.questionRatio">Selecciona el radio de búsqueda </string>
+    <string name="search.fragment.location.lastLocation"></string>
+    <string name="search.fragment.locating">Localizando...</string>
+    <string name="search.fragment.location.noAddress">No se ha podido encontrar su localización</string>
+    <string name="search.fragment.location.suggestion.cp">Utilize un código postal</string>
+    <string name="search.fragment.location.suggestion.retry">o intente calcular su posición nuevamente</string>
+    <string name="search.fragment.location.nextTo">Próximo a %s </string>
+    <string name="search.fragment.location.currentLocation">Calcular mi posición actual</string>
+    <string name="search.fragment.location.otherLocation">Conozco el código postal</string>
+    <string name="search.fragment.location.enableLocation">Necesitamos que actives tu servicio de ubicación</string>
+    <string name="search.fragment.guard">24h</string>
+    <string name="search.fragment.guard.head">Necesitas un profesional que atienda</string>
+    <string name="search.fragment.guard.24h">24 horas</string>
+    <string name="search.fragment.guard.holiday">365 días</string>
+    <string name="search.fragment.question">Pregunta</string>
+    <string name="search.fragment.question.head">¿En que consiste tu avería?</string>
+    <string name="search.fragment.question.text">Este será el mensaje que enviemos cuando te pongas en contacto
+        con un profesional por email o chats y además utilizaremos su contenido para buscar a los profesionales que
+    mejor se adapten a tu avería</string>
+
+    <string name="pageFragment.searching">Buscando...</string>
+    <string name="pageFragment.noResults">No se han encontrado resultados</string>
+
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

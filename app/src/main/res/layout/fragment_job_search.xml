@@ -1,0 +1,245 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.falkenapps.macgyver.search.fragments.JobSearchFragment"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+
+    <ImageButton
+        android:id="@+id/btnNextPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Next"
+        android:background="#FFFFFF"
+        android:src="@mipmap/ic_keyboard_arrow_right_black_24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/circle_progress"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/circle_progress"
+        app:layout_constraintLeft_toRightOf="@+id/imageView7"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/circle_progress"
+        app:layout_constraintLeft_toRightOf="@+id/imageView8"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/circle_progress_selected"
+        app:layout_constraintRight_toLeftOf="@+id/imageView7"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/txtJobSearchHead"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/search.fragment.job.head"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="8dp" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView"
+        android:layout_width="368dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toTopOf="@+id/btnNextPage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtJobSearchHead"
+        tools:context=".search.SearchActivity"
+        tools:showIn="@layout/fragment_job_search"
+        app:layout_constraintVertical_bias="0.51"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.65">
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radioGroupJobs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView"
+            app:layout_constraintTop_toTopOf="@+id/btnNextPage">
+
+            <RadioButton
+                android:id="@+id/cat1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/search.fragment.job.cat1"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupJobs" />
+
+            <RadioButton
+                android:id="@+id/cat2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search.fragment.job.cat2"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <RadioButton
+                android:id="@+id/cat3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search.fragment.job.cat3"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <RadioButton
+                android:id="@+id/cat4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search.fragment.job.cat4"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <RadioButton
+                android:id="@+id/cat5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search.fragment.job.cat5"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <RadioButton
+                android:id="@+id/cat6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search.fragment.job.cat6"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <RadioButton
+                android:id="@+id/cat7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search.fragment.job.cat7"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <RadioButton
+                android:id="@+id/cat8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search.fragment.job.cat8"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <RadioButton
+                android:id="@+id/cat9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search.fragment.job.cat9"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <RadioButton
+                android:id="@+id/cat10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search.fragment.job.cat10"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <RadioButton
+                android:id="@+id/cat11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search.fragment.job.cat11"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <RadioButton
+                android:id="@+id/cat12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search.fragment.job.cat12"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <RadioButton
+                android:id="@+id/cat13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search.fragment.job.cat13"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <RadioButton
+                android:id="@+id/cat14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search.fragment.job.cat14"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <RadioButton
+                android:id="@+id/cat15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search.fragment.job.cat15"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                />
+
+              <RadioButton
+                android:id="@+id/cat16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:text="@string/search.fragment.job.cat16"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintTop_toTopOf="@+id/radioGroupJobs" />
+
+        </RadioGroup>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

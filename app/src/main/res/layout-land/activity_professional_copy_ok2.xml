@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarProfessional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="0dp"
+        android:paddingRight="0dp"
+         />
+
+
+
+    <ScrollView
+
+        android:layout_below="@id/toolbarProfessional"
+        android:layout_alignParentRight="true"
+        android:id="@+id/scrollViewProf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_width="match_parent"
+        android:id="@+id/detailProf"
+        android:layout_below="@id/toolbarProfessional"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imgProfessional"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:srcCompat="@drawable/com_facebook_profile_picture_blank_square"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/txtProfActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:paddingRight="8dp"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgProfessional"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/txtCommentsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/professional.commentsTitle"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtProfTitle" />
+
+        <TextView
+            android:id="@+id/txtProfLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:paddingRight="8dp"
+            android:textAlignment="textStart"
+            android:textStyle="italic"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtProfActivity"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/txtProfTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingRight="8dp"
+            android:text=""
+            android:textAlignment="textStart"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtProfLocation"
+            android:layout_marginStart="8dp" />
+
+        <ImageView
+            android:id="@+id/imgProfScore"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="18dp"
+            app:layout_constraintLeft_toRightOf="@+id/imgProfessional"
+            app:layout_constraintTop_toTopOf="@+id/imgProfessional"
+            app:srcCompat="@drawable/scorefive"
+            android:layout_marginStart="18dp" />
+
+        <ImageView
+            android:id="@+id/imgProfLocation"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/imgProfessional"
+            app:layout_constraintTop_toBottomOf="@+id/imgProfScore"
+            app:srcCompat="@drawable/iconsgeofence"
+            android:layout_marginStart="16dp" />
+
+        <ImageView
+            android:id="@+id/imgProfGuard"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="18dp"
+            app:layout_constraintLeft_toRightOf="@+id/imgProfScore"
+            app:layout_constraintTop_toTopOf="@+id/imgProfScore"
+            app:srcCompat="@drawable/iconsguard"
+            android:layout_marginStart="18dp" />
+
+
+        <ImageView
+            android:id="@+id/imgProfEuro"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/imgProfessional"
+            app:layout_constraintTop_toBottomOf="@+id/imgProfLocation"
+            app:srcCompat="@drawable/iconseurob"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/txtProfPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            app:layout_constraintLeft_toRightOf="@+id/imgProfEuro"
+            app:layout_constraintTop_toTopOf="@+id/imgProfEuro"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/txtProfDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            app:layout_constraintLeft_toRightOf="@+id/imgProfLocation"
+            app:layout_constraintTop_toTopOf="@+id/imgProfLocation"
+            android:layout_marginStart="8dp" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/layoutRecyclerView"
+            android:orientation="vertical" android:layout_width="0dp"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCommentsTitle"
+            >
+            <!--important layout_behavior -->
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeProfRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+              
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/profRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>
+
+
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/material_design_android_floating_action_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="?attr/actionBarTheme"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="0dp"
+        android:paddingRight="0dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        fab:menu_animationDelayPerItem="55"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="@color/colorPrimaryDark"
+        fab:menu_colorPressed="@color/colorPrimaryLight"
+        fab:menu_colorRipple="#99d4d4d4"
+        fab:menu_fab_label="@string/professional.floatingButtonLabel.Menu"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/ic_nav_menu"
+        fab:menu_labels_colorNormal="@color/colorPrimaryDark"
+        fab:menu_labels_colorPressed="#444"
+        fab:menu_labels_colorRipple="#66efecec"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="#f2f1f1"
+        fab:menu_labels_textSize="15sp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#66aff198"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="4dp"
+        fab:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/btnActionChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/whatasppb"
+            fab:fab_label="@string/professional.floatingButton.Menu.Chat"
+            app:fab_colorDisabled="@color/colorPrimaryLight"
+            app:fab_colorNormal="@android:color/transparent"
+            app:fab_colorRipple="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimaryLight"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/btnActionCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_phone_in_talk_white_24dp"
+            fab:fab_label="@string/professional.floatingButton.Menu.Call"
+            app:fab_colorDisabled="@color/colorPrimaryLight"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorRipple="@color/colorPrimaryDark"
+            app:fab_colorPressed="@color/colorPrimaryLight"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/btnActionAddToFavorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_heart_white_24dp"
+            fab:fab_label="@string/professional.floatingButton.Menu.FavoritesAdd"
+
+            app:fab_colorDisabled="@color/colorPrimaryLight"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorRipple="@color/colorPrimaryDark"
+            app:fab_colorPressed="@color/colorPrimaryLight"
+            fab:fab_size="mini" />
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+
+
+
+
+</RelativeLayout>

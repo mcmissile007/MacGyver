@@ -1,0 +1,42 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageBackGround"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/anonymous"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:textStyle="bold"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="@+id/imageBackGround"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.501" />
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/com_facebook_profile_picture_blank_square"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/userName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</android.support.constraint.ConstraintLayout>

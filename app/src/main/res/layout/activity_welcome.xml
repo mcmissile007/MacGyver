@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteY="0dp">
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.falkenapps.macgyver.welcome.WelcomeActivity">
+
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/house"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496" />
+
+    <TextView
+        android:id="@+id/txtProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="36sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/imgProduct"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/welcome.slogan"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgProduct" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/general_button"
+        android:fontFamily="serif"
+        android:text="@string/welcome.signIn"
+        android:textSize="14sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSlogan" />
+
+    <Button
+        android:id="@+id/btnSkipSignIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/general_button"
+        android:text="@string/welcome.signInSkip"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarWelcome"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSlogan"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnGeoFire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="GeoFire"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
+</ScrollView>

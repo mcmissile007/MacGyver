@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "753325968281",
+    "firebase_url": "https://macgyver-3a535.firebaseio.com",
+    "project_id": "macgyver-3a535",
+    "storage_bucket": "macgyver-3a535.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753325968281:android:410a0cd84f2c30ce",
+        "android_client_info": {
+          "package_name": "com.falkenapps.macgyver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753325968281-j5luqm8mak0usrr3mf88csqlsd5mrcaq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.falkenapps.macgyver",
+            "certificate_hash": "1f296bc3ee2c58fef74e3f17f9019000ce5dca1b"
+          }
+        },
+        {
+          "client_id": "753325968281-dhckqhg8me5hb7s4qk5kl26alrbm097e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj1hKE_b9lNsLVQK-MOt7RJZ7OMEUKbCc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753325968281-dhckqhg8me5hb7s4qk5kl26alrbm097e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

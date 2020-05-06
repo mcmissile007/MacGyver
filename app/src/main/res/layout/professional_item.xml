@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context=".main.MainActivity">
+
+<android.support.constraint.ConstraintLayout
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgProfessional"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/com_facebook_profile_picture_blank_square"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtProfName" />
+
+    <TextView
+        android:id="@+id/txtProfActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:paddingRight="8dp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfessional" />
+
+    <TextView
+        android:id="@+id/txtProfLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:text="TextView"
+        android:paddingRight="8dp"
+        android:textAlignment="textStart"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProfActivity" />
+
+    <TextView
+        android:id="@+id/txtProfName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:paddingRight="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtProfTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingRight="8dp"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProfLocation" />
+
+    <ImageView
+        android:id="@+id/imgProfScore"
+        android:layout_width="96dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="-1dp"
+        app:layout_constraintLeft_toRightOf="@+id/imgProfessional"
+        app:layout_constraintTop_toTopOf="@+id/imgProfessional"
+        app:srcCompat="@drawable/scorefive" />
+
+    <ImageView
+        android:id="@+id/imgProfLocation"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imgProfessional"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfScore"
+        app:srcCompat="@drawable/iconsgeofence" />
+
+    <ImageView
+        android:id="@+id/imgProfGuard"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="-1dp"
+        app:layout_constraintLeft_toRightOf="@+id/imgProfScore"
+        app:layout_constraintTop_toTopOf="@+id/imgProfScore"
+        app:srcCompat="@drawable/iconsguard" />
+
+
+    <ImageView
+        android:id="@+id/imgProfEuro"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imgProfessional"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfLocation"
+        app:srcCompat="@drawable/iconseurob" />
+
+    <TextView
+        android:id="@+id/txtProfPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintLeft_toRightOf="@+id/imgProfEuro"
+        app:layout_constraintTop_toTopOf="@+id/imgProfEuro" />
+
+    <TextView
+        android:id="@+id/txtProfDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintLeft_toRightOf="@+id/imgProfLocation"
+        app:layout_constraintTop_toTopOf="@+id/imgProfLocation" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteY="0dp">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.falkenapps.macgyver.welcome.WelcomeActivity">
+
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/adviseSignIn.rememberMessage"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtAdvantage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/adviseSignIn.advantage1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMessage"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/txtAdvantage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:text="@string/adviseSignIn.advantage2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAdvantage1"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/txtAdvantage3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/adviseSignIn.advantage3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAdvantage2"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/txtAdvantage4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:text="@string/adviseSignIn.advantage4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAdvantage3"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/general_button"
+            android:text="@string/adviseSignIn.register"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnContinue"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/general_button"
+            android:text="@string/adviseSignIn.continue"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAdvantage4"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+
+<!--
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".AdviseSignInActivity">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_advise_sign_in" />
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+-->
+
+<!--
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".AdviseSignInActivity">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_advise_sign_in" />
+
+    <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
+        android:src="@mipmap/ic_done_white_36dp" />
+
+</android.support.design.widget.CoordinatorLayout>
+-->
